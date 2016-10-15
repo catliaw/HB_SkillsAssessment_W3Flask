@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>Skills-HTML-CSS</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+  <!-- your html goes here -->
+  <div class="container-fluid">
+    <div class="row">
+      <header class="header-info panel panel-warning col-sm-12 col-md-4 col-md-offset-4">
+        <div class="panel-heading">
+          <h1>Job Application Form</h1>
+        </div>
+        <div class="panel-body">
+          <p>Ubermelon's passion for all melons takes melons to the next level. Join Ubermelon and be part of an &#252;berly talented team. Fill out the application form below to let us get to know you, your salary requirement and which job you are vying for.</p>
+        </div>
+      </header>
+
+      <section class="col-sm-12 col-md-4 col-md-offset-4">
+        <form action="/application" method="POST">
+          <div class="form-group">
+            <label for="first_name">First Name:</label>
+            <input id="first_name" class="form-control" type="text" name="firstname">
+          </div>
+          <div class="form-group">
+            <label for="last_name">Last Name:</label>
+            <input id="last_name" class="form-control" type="text" name="lastname">
+          </div>
+          <div class="form-group">
+            <label for="salary_requirement">Salary Requirement:</label>
+            <div class="input-group">
+              <div class="input-group-addon">$</div>
+              <input type="text" class="form-control" id="salary_requirement" placeholder="Amount" name="salary">
+              <div class="input-group-addon">.00</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="apply_job">Job Applying for:</label>
+            <select id="apply_job" class="form-control" name="job">
+              <option value="software-engineer">Software Engineer</option>
+              <option value="qa-engineer">QA Engineer</option>
+              <option value="product-manager">Product Manager</option>
+            </select>
+          </div>
+          <input class="btn btn-warning" type="submit" name="submit" value="Submit">
+        </form>
+      </section>
+
+    </div>
+  </div>
+  <script src="http://code.jquery.com/jquery.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</body>
+</html>

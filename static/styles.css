@@ -1,0 +1,41 @@
+/* Your CSS goes here */
+
+h1 {
+  text-align: center;
+}
+
+input {
+  background-color: #fcf8e3;
+}
+
+.header-info {
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 5px;
+}
+
+h1 {
+  margin-top: 10px;
+}
+
+p {
+  margin: 0;
+}
+
+#last_name {
+  font-weight: bold;
+}
+
+input.form-control {
+  background-color: #fcf8e3;
+}
+
+.btn-warning, .btn-warning.active, .btn-warning.focus, .btn-warning:active, .btn-warning:focus, .btn-warning:hover, .open>.dropdown-toggle.btn-warning {
+  color: #000;
+  background-color: #fcf8e3;
+  border: 1px solid #ccc;
+}
+
+.btn {
+  border: 1px solid #ccc;
+}
