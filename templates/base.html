@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>{% block title %}TITLE GOES HERE{% endblock %}</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+  <!-- your html goes here -->
+  <div class="container-fluid">
+    <div class="row">
+      <header class="header-info col-sm-12 col-md-4 col-md-offset-4">
+        <div class="panel panel-warning">
+          <div class="panel-heading">
+            <h1>{% block header %}HEADER GOES HERE{% endblock %}</h1>
+          </div>
+          <div class="panel-body">
+            {% block paragraph %}PARAGRAPH GOES HERE{% endblock %}
+          </div>
+        </div>
+      </header>
+      <div>
+        {% block content %}{% endblock %}
+      </div>
+  </div>
+  <script src="http://code.jquery.com/jquery.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</body>
+</html>
